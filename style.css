@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -263,4 +263,74 @@ a { color: initial; }
 
 .subscribe-innertext {
 	font: italic 500 1.2rem Georgia, 'Times New Roman', Times, serif;
+}
+
+/* |||
+
+	ARTICLE PARAGRAPHS
+
+||| */
+
+.firstPart-cont, 
+.secondPart-cont {
+	font: normal 500 1.32rem Georgia, 'Times New Roman', Times, serif;
+	line-height: 1.875rem;
+	color: #333;
+	width: 38rem;
+}
+
+.secondPart-cont > :first-child { margin-top: .7rem; }
+
+.firstPart-cont p, 
+.secondPart-cont p { margin-bottom: .9rem; }
+
+.firstPart-cont p a,
+.secondPart-cont p a { 
+	color: #326891;
+	text-decoration: underline; 
+}
+
+.firstPart-cont p a:hover,
+.secondPart-cont p a:hover {
+	text-decoration: none;
+}
+
+/* |||
+	THANKS FOR READING THE TIMES BOX
+||| */
+
+.thanks-subscribe {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+	height: 5rem;
+	width: 38rem;
+	font: normal 600 .95rem Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+.thanks-subscribe div {
+	position: absolute;
+	z-index: 1;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 5rem;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	border-top: 1px solid rgb(204, 204, 204);
+}
+
+.thanks-link {
+	color: rgb(50, 104, 145);
+	text-decoration: none;
+	z-index: 3;
+}
+
+.thanks-link:visited {
+	color: rgb(50, 104, 145);
 }
