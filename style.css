@@ -82,6 +82,7 @@ a { color: initial; }
    -----------------*/
 
 .navbar {
+	z-index: 1000;
     width: 100%;
     height: 2.8rem;
 	top: 0;
@@ -333,4 +334,94 @@ a { color: initial; }
 
 .thanks-link:visited {
 	color: rgb(50, 104, 145);
+}
+
+/* |||
+	THEORY OF INFLATION FIGURE
+||| */
+
+.inflation-cont {
+	width: 945px;
+	position: relative;
+}
+
+.inflation-caption h1 {
+	color: black;
+	font: normal 700 1.25rem Georgia, 'Times New Roman', Times, serif;
+	margin-bottom: .35rem;
+	margin-top: 1rem;
+}
+
+.inflation-caption p {
+	color: #666;
+	font: normal 400 .95rem Georgia, 'Times New Roman', Times, serif;
+	line-height: 1.125rem;
+	margin-bottom: .5rem;
+}
+
+.inflation-grid {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 576px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: 
+	". . . ."
+	"item-11 item-12 item-13 item-14"
+	". . . ."
+	"item-21 item-22 item-23 item-24";
+}
+
+.item-11 { grid-area: item-11; }
+.item-12 { grid-area: item-12; }
+.item-13 { grid-area: item-13; }
+.item-14 { grid-area: item-14; }
+.item-21 { grid-area: item-21; }
+.item-22 { grid-area: item-22; }
+.item-23 { grid-area: item-23; }
+.item-24 { grid-area: item-24; }
+
+.inflation-item {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 11px;
+}
+
+.inflation-item p span {
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: .05rem;
+	margin-right: 10px;
+}
+
+.inflation-item p {
+	color: rgb(30, 30, 30);
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 17px;
+}
+
+.inflation-author {
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 2rem;
+	width: 945px;
+	height: 3.8rem;
+	font: normal 500 .85rem Arial, Helvetica, sans-serif;
+	color: #333;
+}
+
+.inflation-author div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0 auto;
+	height: 100%;
+	width: 4rem;
+	border-top: 1px solid black;
 }
