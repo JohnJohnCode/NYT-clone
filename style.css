@@ -75,11 +75,13 @@ a { color: initial; }
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-/* -----------------
-
-    NAVBAR
-
-   -----------------*/
+/*
+ *
+ *
+ *		NAVBAR
+ *
+ *
+ */
 
 .navbar {
 	z-index: 1000;
@@ -146,11 +148,13 @@ a { color: initial; }
 
 .navbar-right button:hover { background-color: #326891; }
 
-/* ----------------
-
-	ARTICLE
-
-   ----------------*/
+/*
+ *
+ *
+ *		ARTICLE
+ *
+ *
+ */
 
 .main-cont { 
 	margin-top: 5rem;
@@ -167,9 +171,9 @@ a { color: initial; }
 	width: 38rem;
 }
 
-/* ||| 
-	SOCIAL BUTTONS ABOVE ARTICLE 
-||| */
+/* 
+ *		SOCIAL BUTTONS ABOVE ARTICLE 
+ */
 
 .social-cont {
 	display: flex;
@@ -196,9 +200,9 @@ a { color: initial; }
 
 .social-circle:hover { background-color: transparent; }
 
-/* |||
-	AUTHOR OF THE ARTICLE
-||| */
+/*
+ *		AUTHOR OF THE ARTICLE
+ */
 
 .article-author {
 	display: flex;
@@ -225,9 +229,9 @@ a { color: initial; }
 	font: normal 500 .80rem Arial, Helvetica, sans-serif;
 }
 
-/* |||
-	SIGN UP BTN BELLOW AUTHOR
-||| */
+/*
+ *		SIGN UP BTN BELLOW AUTHOR
+ */
 
 .subscribe-btn {
 	float: right;
@@ -261,11 +265,11 @@ a { color: initial; }
 	font: italic 500 1.2rem Georgia, 'Times New Roman', Times, serif;
 }
 
-/* |||
-
-	ARTICLE PARAGRAPHS
-
-||| */
+/*
+ *
+ *		ARTICLE PARAGRAPHS
+ *
+ */
 
 .paragraphs-cont {
 	font: normal 500 1.35rem Georgia, 'Times New Roman', Times, serif;
@@ -287,9 +291,9 @@ a { color: initial; }
 	text-decoration: none;
 }
 
-/* |||
-	THANKS FOR READING THE TIMES BOX
-||| */
+/*
+ *		THANKS FOR READING THE TIMES BOX
+ */
 
 .thanks-subscribe {
 	position: relative;
@@ -327,9 +331,11 @@ a { color: initial; }
 	color: rgb(50, 104, 145);
 }
 
-/* |||
-	THEORY OF INFLATION FIGURE
-||| */
+/*
+ *
+ *		THEORY OF INFLATION FIGURE
+ *
+ */
 
 .inflation-cont {
 	width: 945px;
@@ -418,7 +424,7 @@ a { color: initial; }
 }
 
 /*
- *	VIDEO EMBED
+ *		VIDEO EMBED
  */
 
 .video-cont {
@@ -427,7 +433,7 @@ a { color: initial; }
 }
 
 /*
- *	CAPTIONS
+ *		CAPTIONS
  */
 
 .caption {
@@ -446,7 +452,7 @@ a { color: initial; }
 }
 
 /*
- *	TELESCOPE PICTURE
+ *		TELESCOPE PICTURE
  */
 
 .telescope-cont {
@@ -455,7 +461,7 @@ a { color: initial; }
 }
 
 /*
- *	ARTICLE FOOTER
+ *		ARTICLE FOOTER
  */
 
 .articleFooter-cont {
@@ -465,7 +471,7 @@ a { color: initial; }
 	flex-flow: column nowrap;
 	width: 38rem;
 	margin-top: .7rem;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 .articleFooter-text {
@@ -499,7 +505,76 @@ a { color: initial; }
 	height: 2.5rem;
 	width: 55%;
 	margin-right: 8px;
-	padding-top: 8px;
+	padding-top: 6px;
 	font: normal 700 .8rem Helvetica, Arial, sans-serif;
 	letter-spacing: .05em;
 }
+
+/*
+ *
+ *
+ *		RECOMMENDED ARTICLES UNDER MAIN ARTICLE
+ *
+ *
+ */
+
+.underArticle-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.underArticle-cont {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 75rem;
+}
+
+.recommendedArticles-cont {
+	display: inline-flex;
+	flex-flow: column nowrap;
+	width: 71%;
+	height: 10rem;
+	background-color: red;
+}
+
+.mostPopular-cont {
+	display: inline-flex;
+	flex-flow: column nowrap;
+	width: 26.5%;
+	height: 10rem;
+	background-color: transparent;
+	border-top: solid 1px black;
+}
+
+/*
+ *		Most Popular section
+ */
+
+.mostPopular-cont h2 {
+	font: normal 700 1rem Helvetica, Arial, sans-serif;
+	line-height: 1.35rem;
+	padding-top: 1.1rem;
+	color: #333;
+	margin-bottom: .9rem;
+}
+
+.mostPopular-item {
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+	margin-bottom: .7rem;
+	border-top: 1px solid rgb(226,226,226);
+}
+
+.mostPopular-link {
+	font: normal 500 1.25rem Georgia, 'Times New Roman', Times, serif;
+	color: rgb(18,18,18);
+	line-height: 1.4rem;
+	text-decoration: none;
+}
+
+.mostPopular-link:hover { color: rgb(102,102,102); }
