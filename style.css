@@ -121,6 +121,8 @@ a { color: initial; }
 	margin-right: 24px;
 }
 
+.navbar-left span:hover { cursor: pointer; }
+
 .navbar-right {
 	height: 100%;
 	display: inline-flex;
@@ -327,9 +329,7 @@ a { color: initial; }
 	z-index: 3;
 }
 
-.thanks-link:visited {
-	color: rgb(50, 104, 145);
-}
+.thanks-link:visited { color: rgb(50, 104, 145); }
 
 /*
  *
@@ -382,7 +382,8 @@ a { color: initial; }
 
 .inflation-item {
 	font-family: Arial, Helvetica, sans-serif;
-	padding-right: 11px;
+	padding-right: 12px;
+	padding-left: 8px;
 }
 
 .inflation-item p span {
@@ -530,7 +531,7 @@ a { color: initial; }
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	width: 75rem;
 }
 
@@ -538,8 +539,6 @@ a { color: initial; }
 	display: inline-flex;
 	flex-flow: column nowrap;
 	width: 71%;
-	height: 10rem;
-	background-color: red;
 }
 
 .mostPopular-cont {
@@ -578,3 +577,308 @@ a { color: initial; }
 }
 
 .mostPopular-link:hover { color: rgb(102,102,102); }
+
+/*
+ *		Newsletter section
+ */
+
+.newsletterTitle-cont {
+	width: 100%;
+	height: 13.5%;
+	display: inline-flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	color: #333;
+	font: normal 700 1rem Helvetica, Arial, sans-serif;
+	padding-top: 2px;
+	border-top: solid 1px black;
+}
+
+.newsletterTitle-cont a {
+	color: rgb(102, 102, 102);
+	font: normal 500 .875rem Helvetica, Arial, sans-serif;
+	line-height: 1.35rem;
+	text-decoration: none;
+}
+
+.newsletterGrid-cont {
+	display: grid;
+	height: 86.5%;
+	grid-template-rows: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.newsletterGrid-card {
+	border: 1px solid rgb(226, 226, 226);
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	height: 90%;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 16px;
+}
+
+.newsletterGrid-card:hover .card-circle {
+	background-color: black;
+	color: white;
+}
+
+.newsletterGrid-card:hover { box-shadow: rgba(196, 196, 196, 0.5) 0px 4px 6px; }
+
+.newsletter-cont {
+	height: 24.4rem;
+	border-bottom: solid 1px black;
+}
+
+.card-circle {
+	background-color: transparent;
+	border: 2px solid black;
+	font-size: 1.75rem;
+	font-style: bold;
+	line-height: 0;
+	border-radius: 50%;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	height: 35px;
+	width: 35px;
+}
+
+.card-heading { margin-top: 11px; }
+
+.card-headingFrequency {
+	font: normal 500 .7rem Helvetica, Arial, sans-serif;
+	color: rgb(51, 51, 51);
+	line-height: 1rem;
+	letter-spacing: .09em;
+}
+
+.card-headingName {
+	font: normal 700 1.1rem Helvetica, Arial, sans-serif;
+	color: rgb(18, 18, 18);
+	line-height: 1.25rem;
+}
+
+.card-para {
+	font: normal 500 .95rem Helvetica, Arial, sans-serif;
+	color: rgb(51, 51, 51);
+	letter-spacing: .2px;
+	line-height: 1.25rem;
+	margin-top: 7px;
+}
+
+.card-link {
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+	font: normal 700 .875rem Helvetica, Arial, sans-serif;
+	color: rgb(50, 104, 145);
+	line-height: 1.125rem;
+	letter-spacing: .2px;
+	text-decoration: none;
+}
+
+.card-link:visited { color: rgb(50, 104, 145); }
+
+.card-link:hover { text-decoration: underline; }
+
+/*
+ *		MORE IN SPACE AND ASTRONOMY SECTION
+ */
+
+.moreAstronomy-cont { border-bottom: 1px solid black; }
+
+.moreAstronomyTitle-cont {
+	display: inline-flex;
+	width: 100%;
+	height: 3.5rem;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.moreAstronomyLink {
+	text-decoration: none;
+	color: black;
+	font: normal 700 1rem Helvetica, Arial, sans-serif;
+}
+
+.moreAstronomyGrid-cont { 
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 16px;
+}
+
+.moreAstronomyGrid-item, 
+.editorsPicksGrid-item { height: 20em; }
+
+.moreAstronomyItem-caption, 
+.editorsPicksItem-caption {
+	text-align: right;
+	color: rgb(153, 153, 153);
+	font-size: .65rem;
+	margin-top: 4px;
+	margin-bottom: 6px;
+}
+
+.moreAstronomyItem-title,
+.editorsPicksItem-title {
+	color: rgb(18, 18, 18);
+	line-height: 1.375rem;
+	font-size: 1rem;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.moreAstronomyItem-title:hover,
+.editorsPicksItem-title:hover { color: rgb(102, 102, 102); }
+
+.moreAstronomyItem-titleMargin,
+.editorsPicksItem-titleMargin { margin-bottom: 6px; }
+
+.moreAstronomyItem-date,
+.editorsPicksItem-date {
+	color: rgb(153, 153, 153);
+	font: normal 500 .76rem Helvetica, Arial, sans-serif;
+}
+
+/*
+ *		EDITOR'S PICK'S
+ */
+
+ .editorsPicksTitle-cont {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 3.5rem;
+}
+
+.editorsPicksTitle {
+	color: #333;
+	font: normal 600 1rem Helvetica, Arial, sans-serif;
+}
+
+.editorsPicksTitle:hover { text-decoration: underline; }
+
+.editorsPicksGrid-cont {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 100%;
+	gap: 16px;
+}
+
+/*
+ *
+ *		LINKS UNDER ARTICLE
+ *
+ */
+
+.underArticleLinks-cont {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 75rem;
+	border-bottom: 1px solid rgb(226, 226, 226);
+	padding-bottom: 14px;
+}
+
+.UAlinksHeader-cont {
+	width: 100%;
+	height: 3rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 4px double lightgrey;
+	margin-bottom: 10px;
+}
+
+.UAlinksHeader-link { 
+	color: rgb(86, 123, 149);
+	font: normal 500 .7rem Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.UAlinksHeader-link:visited { color: rgb(86, 123, 149); }
+
+.UAlinks {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 100%;
+}
+
+.UAlinks-header {
+	color: rgb(51, 51, 51);
+	font: normal 600 .76rem Helvetica, Arial, sans-serif;
+	line-height: 15px;
+	margin-bottom: 12px;
+}
+
+.UAlinks-link {
+	text-decoration: none;
+	font: normal 500 .8rem Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+.UAlinks-li { margin-bottom: 7px; }
+
+.UAlinks-linkDark { 
+	color: black;
+	font: normal 700 .94rem Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.UAlinksSubscribe-ul1 { margin-bottom: 18px; }
+
+.UAlinksSubscribe-ul2 { border-bottom: 1px solid rgb(226, 226, 226);}
+
+.UAlinksSubscribe-ul3 { margin-top: 14px; }
+
+.UAlinks-linkSmall { 
+	color: black;
+	text-decoration: none;
+	font: normal 500 .66rem Helvetica, Arial, sans-serif;
+}
+
+.UAlinks-subscribe {
+	padding-left: 14px;
+	border-left: 1px solid rgb(226, 226, 226);
+}
+
+.UAlinks-link:hover,
+.UAlinks-linkDark:hover,
+.UAlinks-linkSmall:hover { text-decoration: underline; }
+
+/*
+ *		BOTTOMMOST FOOTER
+ */
+
+.bottommostFooter-cont {
+	width: 75rem;
+	padding: 16px 0;
+}
+
+.bottommostFooter-nav {
+	display: inline-flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.bottommostFooter-link {
+	color: #666;
+	font: normal 500 .7rem Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.bottommostFooter-link:visited { color: #666; }
+
+.bottommostFooter-link:hover { text-decoration: underline; }
