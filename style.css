@@ -638,9 +638,10 @@ a { color: initial; }
 .card-circle {
 	background-color: transparent;
 	border: 2px solid black;
-	font-size: 1.75rem;
+	font-size: 24px;
 	font-style: bold;
 	line-height: 0;
+	padding: 0;
 	border-radius: 50%;
 	position: absolute;
 	top: 16px;
